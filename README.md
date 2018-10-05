@@ -23,6 +23,8 @@ This script is  verified in a kerberized environment. Before using the script it
     Driver=/usr/lib/hive/lib/native/Linux-amd64-64/libhortonworkshiveodbc64.so
     HOST=<ZookeeperHost>:2181
     ZKNamespace=hiveserver2
+    #ThriftTransport=2     #-->uncomment if hive running in HTTP mode<--
+    #HTTPPath=/cliservice  #-->uncomment if hive running in HTTP mode<--
     Schema=default
     ServiceDiscoveryMode=1
     HiveServerType=2
