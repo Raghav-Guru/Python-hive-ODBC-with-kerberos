@@ -21,7 +21,7 @@ This script is  verified in a kerberized environment. Before using the script it
     [HWX_KERB]
     Description=Hortonworks Hive ODBC Driver
     Driver=/usr/lib/hive/lib/native/Linux-amd64-64/libhortonworkshiveodbc64.so
-    HOST=c416-node3.raghav.com:2181
+    HOST=<ZookeeperHost>:2181
     ZKNamespace=hiveserver2
     Schema=default
     ServiceDiscoveryMode=1
@@ -36,7 +36,6 @@ This script is  verified in a kerberized environment. Before using the script it
     #pip install pyodbc
 
 -->Copy the script pyhive.py
-
 -->On Linux host get the kerberos ticket with user credentials : 
 
     # kinit hr1
@@ -49,7 +48,7 @@ This script is  verified in a kerberized environment. Before using the script it
     #export ODBCINI=/var/tmp/odbc.ini
     # python pyhive.py --dsn HWX_KERB --sql 'show tables'
     (u'test1', )
-    # python pyhive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
+    # python testhive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
     No results.  Previous SQL was not a query.
     # python pyhive.py --dsn HWX_KERB --sql 'show tables;'
     (u'test1', )
