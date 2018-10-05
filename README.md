@@ -33,7 +33,7 @@ This script is  verified in a kerberized environment. Before using the script it
     KrbServiceName=hive
     KrbRealm=HWX.COM
 
--->Install pyodbc module (this module will need gcc and gcc-c++ pkgs installed on the linux host)
+-->Install pyodbc module (this module will need gcc , gcc-c++,unixODBC and unixODBC-devel pkgs installed on the linux host)
 
     #pip install pyodbc
 
