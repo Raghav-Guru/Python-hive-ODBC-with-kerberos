@@ -2,26 +2,6 @@
 import pyodbc
 import argparse
 
-CONNECTION_STRING_EXAMPLE = ';'.join('''
-Description=Hortonworks Hive ODBC Driver
-Driver=/usr/lib/hive/lib/native/Linux-amd64-64/libhortonworkshiveodbc64.so
-HOST=c416-node3.raghav.com:2181
-ZKNamespace=hiveserver2
-Schema=default
-ServiceDiscoveryMode=1
-HiveServerType=2
-AuthMech=1
-UID=
-KrbHostFQDN=_HOST
-KrbServiceName=hive
-KrbRealm=HWX.COM
-SSL=0
-TwoWaySSL=0
-ClientCert=
-ClientPrivateKey=
-ClientPrivateKeyPassword=
-'''.splitlines())
-
 
 def parse_args():
     parser = argparse.ArgumentParser()
