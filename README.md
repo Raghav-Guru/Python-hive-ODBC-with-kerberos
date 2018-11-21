@@ -48,11 +48,11 @@ This script is  verified in a kerberized environment. Before using the script it
 
     #export HORTONWORKSHIVEINI=/usr/lib/hive/lib/native/Linux-amd64-64/hortonworks.hiveodbc.ini
     #export ODBCINI=/var/tmp/odbc.ini
-    # python pyhive.py --dsn HWX_KERB --sql 'show tables'
+    # python python_hive.py --dsn HWX_KERB --sql 'show tables'
     (u'test1', )
-    # python pyhive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
+    # python python_hive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
     No results.  Previous SQL was not a query.
-    # python pyhive.py --dsn HWX_KERB --sql 'show tables;'
+    # python python_hive.py --dsn HWX_KERB --sql 'show tables;'
     (u'test1', )
     (u'test2', )
 
