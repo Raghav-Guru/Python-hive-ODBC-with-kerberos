@@ -50,7 +50,7 @@ This script is  verified in a kerberized environment. Before using the script it
     #export ODBCINI=/var/tmp/odbc.ini
     # python pyhive.py --dsn HWX_KERB --sql 'show tables'
     (u'test1', )
-    # python testhive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
+    # python pyhive.py --dsn HWX_KERB --sql 'create table test2(col1 string);'
     No results.  Previous SQL was not a query.
     # python pyhive.py --dsn HWX_KERB --sql 'show tables;'
     (u'test1', )
