@@ -37,7 +37,12 @@ This script is  verified in a kerberized environment. Before using the script it
 
     #pip install pyodbc
 
--->Copy the script pyhive.py
+-->Copy the script python_hive.py.
+
+    #git clone https://github.com/Raghav-Guru/Python-hive-ODBC-with-kerberos.git
+    #cd Python-hive-ODBC-with-kerberos
+
+
 -->On Linux host get the kerberos ticket with user credentials : 
 
     # kinit hr1
